@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Private / utility surfaces
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /login
+Disallow: /register
+Disallow: /password
+Disallow: /email
+Disallow: /profile
+Disallow: /quote/success
+Disallow: /company-profiles-download/
+Disallow: /company-profiles/download-request
+
+# Prefer the Laravel route (/robots.txt) which injects an absolute Sitemap URL.
+# This static file is a fallback when the web server serves public/robots.txt directly.
+Sitemap: https://effectivemedia.co.ke/sitemap.xml

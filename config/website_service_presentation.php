@@ -1,0 +1,105 @@
+<?php
+
+use App\Support\PublicServicePresentation;
+
+/**
+ * Default copy + imagery keyed by Service.format_key.
+ * Editors override inside each service → public_sections (JSON merged).
+ *
+ * @see PublicServicePresentation
+ */
+return [
+    'presentation_by_key' => [
+        'street_light' => [
+            'showcase_slug' => 'street-light-advertising',
+            'kicker' => 'Commuter corridor product',
+            'headline' => 'Sequence poles so the commute becomes your reel',
+            'positioning' => 'Street light faces reset attention at every stopping point — frequency is the product.',
+            'example' => 'FMCG commuter defence along Nakuru → Gilgil commuter stretch.',
+            'ideal_use_cases' => ['Daily frequency against competitors', 'New SKU education on fixed routes', 'Event countdowns pinned to arterial roads'],
+            'campaign_objectives' => ['Sustain awareness', 'Localise narratives per town', 'Support retail countdowns'],
+            'impact_line' => 'Highest repeat exposure per spend band for urban motion.',
+            'cta_primary_label' => 'Brief street lights',
+            'cta_secondary_label' => 'Open deep-dive page',
+            'fallback_image' => 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80',
+        ],
+        'billboard' => [
+            'showcase_slug' => 'billboards',
+            'kicker' => 'Large-format authority',
+            'headline' => 'Capture long sightlines before decision points',
+            'positioning' => 'Billboards frame city stories for drivers moving at scale — dominance, prestige, motorway tension.',
+            'example' => 'Automotive takeover ahead of roundabout decision nodes.',
+            'ideal_use_cases' => ['Regional launches needing instant scale', 'Directional urgency ("exit now") messaging', 'Prestige brand anchoring'],
+            'campaign_objectives' => ['Create immediate fame', 'Route drivers to retail catches', 'Frame an entire city\'s conversation'],
+            'impact_line' => 'Best when speed + distance mandate bold creative.',
+            'cta_primary_label' => 'Brief billboards',
+            'cta_secondary_label' => 'View technical showcase',
+            'fallback_image' => 'https://images.unsplash.com/photo-1494522358652-f30e61a60313?auto=format&fit=crop&w=1600&q=80',
+        ],
+        'pavement' => [
+            'showcase_slug' => 'pavement-ads',
+            'kicker' => 'Proximity media',
+            'headline' => 'Win the walk before someone opens their phone',
+            'positioning' => 'Street-level canvases shorten the gap between noticing and stepping inside.',
+            'example' => 'Retail weekend uplift encircling a CBD shopping ellipse.',
+            'ideal_use_cases' => ['Retail footfall', 'Event wayfinding', 'Public service cues near civic queues'],
+            'campaign_objectives' => ['Harvest intent near stores', 'Reinforce OOH + radio integration', 'Localise tactical offers'],
+            'impact_line' => 'Highest contextual relevance for pedestrians.',
+            'cta_primary_label' => 'Brief pavement placements',
+            'cta_secondary_label' => 'See placement examples',
+            'fallback_image' => 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1600&q=80',
+        ],
+        'office' => [
+            'showcase_slug' => 'office-branding',
+            'kicker' => 'Trust infrastructure',
+            'headline' => 'Branches should feel like the brand promise',
+            'positioning' => 'Environmental branding aligns compliance, CX, and talent confidence.',
+            'example' => 'Banking rollout with templated fascia + interiors across six towns.',
+            'ideal_use_cases' => ['Corporate refresh cycles', 'Rebrands', 'Healthcare reassurance'],
+            'campaign_objectives' => ['Elevate perceived stability', 'Unify multilingual branches', 'Support premium pricing'],
+            'impact_line' => 'Keeps intangible services tangible.',
+            'cta_primary_label' => 'Discuss workplace branding',
+            'cta_secondary_label' => 'See programme detail',
+            'fallback_image' => 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=80',
+        ],
+        'activation' => [
+            'showcase_slug' => 'activations-roadshows',
+            'kicker' => 'Live ignition',
+            'headline' => 'Put the product in handshake range',
+            'positioning' => 'Sampling and roadshows turn visibility into tactile proof — we pair field teams with corridor media.',
+            'example' => 'Beverage county tour with caravan + pole reinforcement.',
+            'ideal_use_cases' => ['Liquid trials', 'Fintech onboarding', 'Education enrollment pushes'],
+            'campaign_objectives' => ['Harvest leads', 'Coach trial', 'Amplify influencer moments onsite'],
+            'impact_line' => 'Best lift when experiential + roadside reinforce each other.',
+            'cta_primary_label' => 'Plan an activation corridor',
+            'cta_secondary_label' => 'Operational detail',
+            'fallback_image' => 'https://images.unsplash.com/photo-1472653431158-6364773b2a56?auto=format&fit=crop&w=1600&q=80',
+        ],
+        'rollup' => [
+            'showcase_slug' => 'roll-up-banners',
+            'kicker' => 'Event acceleration',
+            'headline' => 'Spin up authoritative messaging wherever the brand parks',
+            'positioning' => 'Roll-ups keep retail, conferences, and field teams visually aligned.',
+            'example' => 'Pan-African trade booth kit with interchangeable panels.',
+            'ideal_use_cases' => ['Government expos', 'SME franchises', 'NGO disclosures'],
+            'campaign_objectives' => ['Maintain creative consistency cheaply', 'Support activations instantly', 'Localise QR-driven journeys'],
+            'impact_line' => 'Operational insurance for experiential teams.',
+            'cta_primary_label' => 'Order roll-up collateral',
+            'cta_secondary_label' => 'Specifications',
+            'fallback_image' => 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80',
+        ],
+        'generic' => [
+            'showcase_slug' => null,
+            'kicker' => 'Outdoor product',
+            'headline' => 'Built for Kenyan mobility patterns',
+            'positioning' => 'Talk to planners about tailoring inventory to your KPI.',
+            'example' => 'Hybrid briefs blending multiple formats.',
+            'ideal_use_cases' => ['Complex briefs needing custom bundles'],
+            'campaign_objectives' => ['Flexible — set in planner'],
+            'impact_line' => 'Hybrid coverage when one format alone will not suffice.',
+            'cta_primary_label' => 'Talk to planners',
+            'cta_secondary_label' => 'Book consultation',
+            'fallback_image' => 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80',
+        ],
+    ],
+];
